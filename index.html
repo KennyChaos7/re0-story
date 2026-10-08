@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Re:Zero · 章节回廊</title>
+  <meta name="description" content="按 Web 小说大篇章阅读 Re:Zero：剧情脉络、死亡回归路线、人物变化与伏笔。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23121620'/%3E%3Cpath d='M23 11a9 9 0 1 0 1 10M23 5v7h-7' fill='none' stroke='%23e9c578' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=drawer">
+  <script defer src="chapters.js"></script>
+  <script defer src="anime.js"></script>
+  <script defer src="characters.js"></script>
+  <script defer src="subaru.js"></script>
+  <script defer src="app.js?v=drawer"></script>
+</head>
+<body>
+  <a class="skip" href="#reading">跳到正文</a>
+  <header class="topbar"><button type="button" id="directory-toggle" class="directory-toggle" aria-haspopup="dialog" aria-controls="chapter-drawer"><span aria-hidden="true">☰</span> 目录</button><a class="brand" href="#home"><span class="brand-mark">Re:0</span><span>章节回廊</span></a><span class="edition">WEB 小说 · 双视角阅读</span></header>
+  <div class="layout">
+    <aside class="sidebar"><details id="directory" open><summary>章节目录</summary><nav id="chapter-nav" aria-label="小说篇章"></nav></details><p class="aside-note">各章包含本章剧透。后续章节的解答不会提前写进前章正文。</p></aside>
+    <main id="reading" aria-live="polite"></main>
+    <aside class="contents" aria-label="本章目录"><span class="eyebrow">本章阅读</span><nav id="section-nav"></nav><p>事件顺序与因果关系分别呈现；死亡回归路线只保留理解剧情所需的节点。</p></aside>
+  </div>
+  <footer class="site-footer">非官方剧情解读 · 原作：长月达平 · 以 Web 小说为主，书籍版与动画可能存在差异。<br>剧情与解读分开呈现；原文链接见各章来源。内容核对：2026-10-04。</footer>
+  <dialog id="chapter-drawer" class="chapter-drawer" aria-labelledby="drawer-title"><header class="drawer-head"><h2 id="drawer-title">章节目录</h2><button type="button" id="directory-close" aria-label="关闭目录">×</button></header><nav id="drawer-chapter-nav" aria-label="小说篇章"></nav></dialog>
+  <div id="character-tooltip" class="character-tooltip" role="tooltip" hidden></div>
+  <noscript>章节阅读需要启用 JavaScript。原作目录：<a href="https://ncode.syosetu.com/n2267be/">Re:Zero Web 小说</a>。</noscript>
+</body>
+</html>
